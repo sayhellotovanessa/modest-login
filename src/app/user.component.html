@@ -1,0 +1,16 @@
+<div class="all">
+  <section class="section__content">
+   <h1>{{title}}</h1>
+   <h2>Welcome back</h2>
+  </section>
+  <section class="section__form">
+    <form [formGroup]="loginForm" (ngSubmit)="doLogin($event)">
+      <label for="email">Email</label>
+        <input formControlName="email" type="email" placeholder="Your email" class="login__input">
+         <label for="password">Password</label>
+        <input formControlName="password" type="password" placeholder="Your password" class="login__input">
+      <button type="submit" class="login__btn">Log in</button>
+    </form>
+
+  </section>
+</div>
